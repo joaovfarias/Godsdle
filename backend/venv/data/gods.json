@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "name": "Zeus",
+    "pantheon": "Greek",
+    "gender": "Male",
+    "domain": ["Sky", "Thunder"],
+    "height": "Tall",
+    "Mortal": false,
+    "Type": "God",
+    "Home": "Mount Olympus"
+  },
+
+  {
+    "id": 2,
+    "name": "Athena",
+    "pantheon": "Greek",
+    "gender": "Female",
+    "domain": ["Wisdom", "War"],
+    "height": "Short",
+    "Mortal": false,
+    "Type": "God",
+    "Home": "Mount Olympus"
+  },
+
+  {
+    "id": 3,
+    "name": "Thor",
+    "pantheon": "Norse",
+    "gender": "Male",
+    "domain": ["Thunder", "Strength"],
+    "height": "Tall",
+    "Mortal": false,
+    "Type": "God",
+    "Home": "Asgard"
+  },
+
+  {
+    "id": 4,
+    "name": "Odin",
+    "pantheon": "Norse",
+    "gender": "Male",
+    "domain": ["Wisdom", "War", "Poetry"],
+    "height": "Tall",
+    "Mortal": false,
+    "Type": "God",
+    "Home": "Asgard"
+  },
+
+  {
+    "id": 5,
+    "name": "Frigg",
+    "pantheon": "Norse",
+    "gender": "Female",
+    "domain": ["Marriage", "Motherhood"],
+    "height": "Medium",
+    "Mortal": false,
+    "Type": "God",
+    "Home": "Asgard"
+  },
+
+  {
+    "id": 6,
+    "name": "Loki",
+    "pantheon": "Norse",
+    "gender": "Male",
+    "domain": ["Trickery", "Fire"],
+    "height": "Medium",
+    "Mortal": false,
+    "Type": "God",
+    "Home": "Asgard"
+  }
+]
