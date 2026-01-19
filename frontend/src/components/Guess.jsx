@@ -1,11 +1,10 @@
 export default function Guess() {
+  const prefix =
+    "flex flex-row items-center justify-center w-18 h-18 rounded-lg text-center border border-gray-700";
   const boxColors = {
-    correct:
-      "flex flex-row items-center justify-center w-18 h-18 bg-green-500 rounded-lg text-center",
-    incorrect:
-      "flex flex-row items-center justify-center w-18 h-18 bg-red-500 rounded-lg text-center",
-    first:
-      "flex flex-row items-center justify-center w-18 h-18 bg-gray-300 rounded-lg text-center",
+    correct: prefix + " bg-green-500 ",
+    incorrect: prefix + " bg-red-500 ",
+    first: prefix + " bg-gray-300 ",
   };
 
   return (
