@@ -1,73 +1,540 @@
 [
   {
     "id": 1,
-    "name": "Zeus",
+    "name": "Aphrodite",
     "pantheon": "Greek",
-    "gender": "Male",
-    "domain": ["Sky", "Thunder"],
-    "height": "Tall",
-    "Mortal": false,
-    "Type": "God",
-    "Home": "Mount Olympus"
+    "gender": "Female",
+    "domain": "Love, Beauty",
+    "animal": "Goose",
+    "mortal": false,
+    "type": "Goddess",
+    "home": "Mount Olympus"
   },
 
   {
     "id": 2,
-    "name": "Athena",
+    "name": "Appolo",
     "pantheon": "Greek",
-    "gender": "Female",
-    "domain": ["Wisdom", "War"],
-    "height": "Short",
-    "Mortal": false,
-    "Type": "God",
-    "Home": "Mount Olympus"
+    "gender": "Male",
+    "domain": "Prophecy, Music",
+    "animal": "Swan",
+    "mortal": false,
+    "type": "God",
+    "home": "Mount Olympus"
   },
 
   {
     "id": 3,
-    "name": "Thor",
-    "pantheon": "Norse",
+    "name": "Ares",
+    "pantheon": "Greek",
     "gender": "Male",
-    "domain": ["Thunder", "Strength"],
-    "height": "Tall",
-    "Mortal": false,
-    "Type": "God",
-    "Home": "Asgard"
+    "domain": "War",
+    "animal": "Serpent, Dog",
+    "mortal": false,
+    "type": "God",
+    "home": "Mount Olympus"
   },
 
   {
     "id": 4,
-    "name": "Odin",
-    "pantheon": "Norse",
-    "gender": "Male",
-    "domain": ["Wisdom", "War", "Poetry"],
-    "height": "Tall",
-    "Mortal": false,
-    "Type": "God",
-    "Home": "Asgard"
+    "name": "Artemis",
+    "pantheon": "Greek",
+    "gender": "Female",
+    "domain": "Hunt",
+    "animal": "Deer",
+    "mortal": false,
+    "type": "Goddess",
+    "home": "Mount Olympus"
   },
 
   {
     "id": 5,
-    "name": "Frigg",
-    "pantheon": "Norse",
+    "name": "Athena",
+    "pantheon": "Greek",
     "gender": "Female",
-    "domain": ["Marriage", "Motherhood"],
-    "height": "Medium",
-    "Mortal": false,
-    "Type": "God",
-    "Home": "Asgard"
+    "domain": "Wisdom, War",
+    "animal": "Owl",
+    "mortal": false,
+    "type": "Goddess",
+    "home": "Mount Olympus"
   },
 
   {
     "id": 6,
+    "name": "Hera",
+    "pantheon": "Greek",
+    "gender": "Female",
+    "domain": "Marriage",
+    "animal": "Cow, Lion",
+    "mortal": false,
+    "type": "Goddess",
+    "home": "Mount Olympus"
+  },
+
+  {
+    "id": 7,
+    "name": "Hermes",
+    "pantheon": "Greek",
+    "gender": "Male",
+    "domain": "Travel, Trade",
+    "animal": "Ram",
+    "mortal": false,
+    "type": "God",
+    "home": "Mount Olympus"
+  },
+
+  {
+    "id": 8,
+    "name": "Poseidon",
+    "pantheon": "Greek",
+    "gender": "Male",
+    "domain": "Sea, Earthquakes",
+    "animal": "Horse, Bull",
+    "mortal": false,
+    "type": "God",
+    "home": "Mount Olympus"
+  },
+
+  {
+    "id": 9,
+    "name": "Zeus",
+    "pantheon": "Greek",
+    "gender": "Male",
+    "domain": "Sky, Thunder",
+    "animal": "Eagle, Bull",
+    "mortal": false,
+    "type": "God",
+    "home": "Mount Olympus"
+  },
+
+  {
+    "id": 10,
+    "name": "Helios",
+    "pantheon": "Greek",
+    "gender": "Male",
+    "domain": "Sun",
+    "animal": "Horse",
+    "mortal": false,
+    "type": "God",
+    "home": "Mount Olympus"
+  },
+
+  {
+    "id": 11,
+    "name": "Cronos",
+    "pantheon": "Greek",
+    "gender": "Male",
+    "domain": "Time",
+    "animal": "none",
+    "mortal": false,
+    "type": "Titan",
+    "home": "Tartarus"
+  },
+
+  {
+    "id": 12,
+    "name": "Hades",
+    "pantheon": "Greek",
+    "gender": "Male",
+    "domain": "Underworld",
+    "animal": "Cerberus",
+    "mortal": false,
+    "type": "God",
+    "home": "Underworld"
+  },
+
+  {
+    "id": 13,
+    "name": "Hephaestus",
+    "pantheon": "Greek",
+    "gender": "Male",
+    "domain": "Fire, Forge",
+    "animal": "Donkey",
+    "mortal": false,
+    "type": "God",
+    "home": "Mount Olympus"
+  },
+
+  {
+    "id": 14,
+    "name": "Gaia",
+    "pantheon": "Greek",
+    "gender": "Female",
+    "domain": "Earth",
+    "animal": "none",
+    "mortal": false,
+    "type": "Titan",
+    "home": "Earth"
+  },
+
+  {
+    "id": 15,
+    "name": "Kratos",
+    "pantheon": "Greek",
+    "gender": "Male",
+    "domain": "Strength, Power",
+    "animal": "none",
+    "mortal": false,
+    "type": "God",
+    "home": "Mount Olympus"
+  },
+
+  {
+    "id": 16,
+    "name": "Deimos",
+    "pantheon": "Greek",
+    "gender": "Male",
+    "domain": "Terror",
+    "animal": "none",
+    "mortal": false,
+    "type": "God",
+    "home": "Mount Olympus"
+  },
+
+  {
+    "id": 17,
+    "name": "Erinyes",
+    "pantheon": "Greek",
+    "gender": "Female",
+    "domain": "Vengeance",
+    "animal": "none",
+    "mortal": false,
+    "type": "Goddess",
+    "home": "Underworld"
+  },
+
+  {
+    "id": 18,
+    "name": "Hercules",
+    "pantheon": "Greek",
+    "gender": "Male",
+    "domain": "Strength, Heroism",
+    "animal": "Lion",
+    "mortal": true,
+    "type": "Demigod",
+    "home": "Mount Olympus"
+  },
+
+  {
+    "id": 19,
+    "name": "Persephone",
+    "pantheon": "Greek",
+    "gender": "Female",
+    "domain": "Spring, Underworld",
+    "animal": "None",
+    "mortal": false,
+    "type": "Goddess",
+    "home": "Underworld"
+  },
+
+  {
+    "id": 20,
+    "name": "Calliope",
+    "pantheon": "Greek",
+    "gender": "Female",
+    "domain": "Epic Poetry",
+    "animal": "None",
+    "mortal": true,
+    "type": "Demigod",
+    "home": "Sparta"
+  },
+
+  {
+    "id": 21,
+    "name": "Ceryx",
+    "pantheon": "Greek",
+    "gender": "Male",
+    "domain": "Messenger",
+    "animal": "None",
+    "mortal": true,
+    "type": "Demigod"
+  },
+
+  {
+    "id": 22,
+    "name": "Perseus",
+    "pantheon": "Greek",
+    "gender": "Male",
+    "domain": "Heroism",
+    "animal": "None",
+    "mortal": true,
+    "type": "Demigod",
+    "home": "Argos"
+  },
+
+  {
+    "id": 23,
+    "name": "Theseus",
+    "pantheon": "Greek",
+    "gender": "Male",
+    "domain": "Heroism",
+    "animal": "None",
+    "mortal": true,
+    "type": "Demigod",
+    "home": "Athens"
+  },
+
+  {
+    "id": 24,
+    "name": "Achilles",
+    "pantheon": "Greek",
+    "gender": "Male",
+    "domain": "Heroism",
+    "animal": "None",
+    "mortal": true,
+    "type": "Demigod",
+    "home": "Phthia"
+  },
+
+  {
+    "id": 25,
+    "name": "Oceanus",
+    "pantheon": "Greek",
+    "gender": "Male",
+    "domain": "Ocean, Sea",
+    "animal": "None",
+    "mortal": false,
+    "type": "Titan",
+    "home": "Ocean"
+  },
+
+  {
+    "id": 26,
+    "name": "Hyperion",
+    "pantheon": "Greek",
+    "gender": "Male",
+    "domain": "Light",
+    "animal": "None",
+    "mortal": false,
+    "type": "Titan",
+    "home": "Tartarus"
+  },
+
+  {
+    "id": 27,
+    "name": "Rhea",
+    "pantheon": "Greek",
+    "gender": "Female",
+    "domain": "Fertility, Motherhood",
+    "animal": "None",
+    "mortal": false,
+    "type": "Titan",
+    "home": "Tartarus"
+  },
+
+  {
+    "id": 28,
+    "name": "Sisters of Fate (Greek)",
+    "pantheon": "Greek",
+    "gender": "Female",
+    "domain": "Fate",
+    "animal": "None",
+    "mortal": false,
+    "type": "Goddess",
+    "home": "Mount Olympus"
+  },
+
+  {
+    "id": 29,
+    "name": "Odin",
+    "pantheon": "Norse",
+    "gender": "Male",
+    "domain": "Wisdom, War",
+    "animal": "Raven, Wolf",
+    "mortal": false,
+    "type": "Aesir God",
+    "home": "Asgard"
+  },
+
+  {
+    "id": 30,
+    "name": "Thor",
+    "pantheon": "Norse",
+    "gender": "Male",
+    "domain": "Thunder, Strength",
+    "animal": "Goat",
+    "mortal": false,
+    "type": "Aesir God",
+    "home": "Asgard"
+  },
+
+  {
+    "id": 31,
+    "name": "Heimdall",
+    "pantheon": "Norse",
+    "gender": "Male",
+    "domain": "Foresight, Surveillance",
+    "animal": "None",
+    "mortal": false,
+    "type": "Aesir God",
+    "home": "Asgard"
+  },
+
+  {
+    "id": 32,
+    "name": "Sif",
+    "pantheon": "Norse",
+    "gender": "Female",
+    "domain": "Wheat, Earth",
+    "animal": "None",
+    "mortal": false,
+    "type": "Aesir Goddess",
+    "home": "Asgard"
+  },
+
+  {
+    "id": 33,
+    "name": "Tyr",
+    "pantheon": "Norse",
+    "gender": "Male",
+    "domain": "War, Justice",
+    "animal": "Wolf",
+    "mortal": false,
+    "type": "Aesir God",
+    "home": "Asgard"
+  },
+
+  {
+    "id": 34,
+    "name": "Baldur",
+    "pantheon": "Norse",
+    "gender": "Male",
+    "domain": "Light, Purity",
+    "animal": "None",
+    "mortal": false,
+    "type": "Aesir God",
+    "home": "Asgard"
+  },
+
+  {
+    "id": 35,
+    "name": "Magni",
+    "pantheon": "Norse",
+    "gender": "Male",
+    "domain": "Thunder, Strength",
+    "animal": "None",
+    "mortal": true,
+    "type": "Demigod",
+    "home": "Asgard"
+  },
+
+  {
+    "id": 36,
+    "name": "Modi",
+    "pantheon": "Norse",
+    "gender": "Male",
+    "domain": "Thunder, Courage",
+    "animal": "None",
+    "mortal": true,
+    "type": "Demigod",
+    "home": "Asgard"
+  },
+
+  {
+    "id": 37,
+    "name": "Thrúd",
+    "pantheon": "Norse",
+    "gender": " Female",
+    "domain": "Thunder, Strength",
+    "animal": "None",
+    "mortal": true,
+    "type": "Demigod",
+    "home": "Asgard"
+  },
+
+  {
+    "id": 38,
     "name": "Loki",
     "pantheon": "Norse",
     "gender": "Male",
-    "domain": ["Trickery", "Fire"],
-    "height": "Medium",
-    "Mortal": false,
-    "Type": "God",
-    "Home": "Asgard"
+    "domain": "Trickery, Mischief",
+    "animal": "None",
+    "mortal": false,
+    "type": "Aesir God",
+    "home": "Asgard"
+  },
+
+  {
+    "id": 39,
+    "name": "Freya",
+    "pantheon": "Norse",
+    "gender": "Female",
+    "domain": "Sorcery, Beauty",
+    "animal": "None",
+    "mortal": false,
+    "type": "Vanir Goddess",
+    "home": "Asgard"
+  },
+
+  {
+    "id": 40,
+    "name": "Freyr",
+    "pantheon": "Norse",
+    "gender": "Male",
+    "domain": "Fertility, Prosperity",
+    "animal": "Boar",
+    "mortal": false,
+    "type": "Vanir God",
+    "home": "Asgard"
+  },
+
+  {
+    "id": 41,
+    "name": "Hildisvíni",
+    "pantheon": "Norse",
+    "gender": "Male",
+    "domain": "Warrior, Boar",
+    "animal": "Boar",
+    "mortal": false,
+    "type": "Vanir God",
+    "home": "Midgard"
+  },
+
+  {
+    "Id": 42,
+    "name": "Gná",
+    "pantheon": "Norse",
+    "gender": "Female",
+    "domain": "Wind, Fullness",
+    "animal": "none",
+    "mortal": false,
+    "type": "Vanir Goddess",
+    "home": "Muspelheim"
+  },
+
+  {
+    "id": 43,
+    "name": "Surtr",
+    "pantheon": "Norse",
+    "gender": "Male",
+    "domain": "Fire, Destruction",
+    "animal": "None",
+    "mortal": false,
+    "type": "Titan",
+    "home": "Muspelheim"
+  },
+
+  {
+    "id": 44,
+    "name": "Sisters of Fate (Norse)",
+    "pantheon": "Norse",
+    "gender": "Female",
+    "domain": "Fate",
+    "animal": "None",
+    "mortal": false,
+    "type": "Goddess",
+    "home": "Asgard"
+  },
+
+  {
+    "id": 45,
+    "name": "Mimir",
+    "pantheon": "Norse",
+    "gender": "Male",
+    "domain": "Wisdom, Knowledge",
+    "animal": "None",
+    "mortal": false,
+    "type": "God",
+    "home": "Asgard"
   }
 ]
