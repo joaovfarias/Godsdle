@@ -10,7 +10,8 @@ export default function SubmitInput({
   setMatches,
 }) {
   const [autoCompleteMatches, setAutoCompleteMatches] = useState([]);
-  const debouncedValue = useDebounce(guess, 100);
+  const debouncedValue = useDebounce(guess, 50);
+  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
   const handleSubmitGuess = (e, selectedMatch = null) => {
     if (autoCompleteMatches.length === 0 && !selectedMatch) {
@@ -76,6 +77,13 @@ export default function SubmitInput({
         placeholder="Guess the god..."
         className="rounded-md border border-gray-700 p-2 w-120 bg-gray-100"
       />
+      {autoCompleteMatches.length === 0 &&
+        guess.trim() &&
+        debouncedValue === guess.trim() && (
+          <div className="absolute bg-white border border-gray-300 mt-1 rounded-md w-120 p-2 z-10">
+            No matches found
+          </div>
+        )}
       {autoCompleteMatches.length > 0 &&
         guess.trim() &&
         debouncedValue === guess.trim() &&
@@ -83,13 +91,18 @@ export default function SubmitInput({
           <div className="absolute bg-white border border-gray-300 mt-1 rounded-md w-120 max-h-60 overflow-y-auto z-10">
             {autoCompleteMatches.map((match) => (
               <div
+                className="flex flex-row items-center mb-4 mt-4 ml-3 hover:bg-gray-200 cursor-pointer"
                 key={match.id}
-                className="px-4 py-2 hover:bg-gray-200 cursor-pointer"
                 onClick={(e) => {
                   handleSubmitGuess(e, match);
                 }}
               >
-                {match.name}
+                <img
+                  src={`${BACKEND_URL}/images/${match.image}`}
+                  alt={match.name}
+                  className="w-12 h-12 object-cover rounded-lg border-solid border-2 border-black inset-shadow shadow-inner shadow-black"
+                />
+                <div className="px-4 py-2">{match.name}</div>
               </div>
             ))}
           </div>
@@ -98,7 +111,7 @@ export default function SubmitInput({
         onClick={(e) => {
           handleSubmitGuess(e);
         }}
-        className="ml-2 rounded-md bg-gray-500 px-4 py-2 text-white"
+        className="ml-2 rounded-md bg-gray-500 px-4 py-2 text-white border-black inset-shadow shadow-inner shadow-black hover:bg-gray-600"
         disabled={!guess.trim()}
       >
         Submit

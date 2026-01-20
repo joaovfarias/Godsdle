@@ -10,19 +10,20 @@ export default function Help({ show, onClose }) {
           <p className="text-xs font-semibold uppercase tracking-[0.08em] text-slate-500">
             How to play
           </p>
-          <h2 className="mt-1 text-lg font-bold text-slate-900">
-            Guess the God
-          </h2>
-          <p className="mt-2 text-sm leading-relaxed">
+          <h2 className="mt-1 text-lg text-slate-900">Guess the God</h2>
+          <p className="mt-2 text-sm font-semibold leading-relaxed">
             Try to guess the correct god in as few attemps as possible. This
             game contains <strong>Gods, Semi-Gods and Titans </strong> from the
             <strong> Greek and Nordic</strong> mythologies only.
           </p>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-slate-700">
+          <ul className="mt-3 list-disc font-semibold space-y-1 pl-5 text-sm text-slate-700">
             <li>Type a name and submit to check if it matches.</li>
             <li>Pay attention to feedback after each guess.</li>
             <li>Use as few attempts as possible to win.</li>
-            <li>Red means wrong and green means right</li>
+            <li>
+              Red means wrong, Yellow means partially right, and Green means
+              right
+            </li>
           </ul>
         </div>
         <button

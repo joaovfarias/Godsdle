@@ -15,13 +15,20 @@ export default function LogoStats() {
     <>
       <Help show={showHelp} onClose={() => setShowHelp(false)} />
 
-      <img src={Logo} alt="Logo" className="w-100 mt-5" />
+      <img
+        src={Logo}
+        alt="Logo"
+        className="w-100 mt-5 hover:scale-105 transition-transform duration-200 cursor-pointer"
+      />
       <div className="flex flex-row items-center gap-15 mt-5">
-        <div className="tooltip" onClick={handleHelpClick}>
+        <div
+          className="tooltip hover:scale-110 brightness-110 transition-transform duration-200 cursor-pointer"
+          onClick={handleHelpClick}
+        >
           <MdOutlineHelpOutline size={40} color="white" />
           <span className="tooltiptext">How to play</span>
         </div>
-        <div className="tooltip">
+        <div className="tooltip hover:scale-110 transition-transform duration-200 cursor-pointer">
           <IoIosStats size={40} color="white" />
           <span className="tooltiptext">Stats</span>
         </div>

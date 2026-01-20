@@ -4,23 +4,25 @@
     "name": "Aphrodite",
     "pantheon": "Greek",
     "gender": "Female",
-    "domain": "Love, Beauty",
-    "animal": "Goose",
+    "domain": "❤️ 🌹",
+    "animal": "🦆",
     "mortal": false,
     "type": "Goddess",
-    "home": "Mount Olympus"
+    "home": "Mount Olympus",
+    "image": "aphrodite.jpg"
   },
 
   {
     "id": 2,
-    "name": "Appolo",
+    "name": "Apollo",
     "pantheon": "Greek",
     "gender": "Male",
-    "domain": "Prophecy, Music",
-    "animal": "Swan",
+    "domain": "🔮 🎵",
+    "animal": "🦢",
     "mortal": false,
     "type": "God",
-    "home": "Mount Olympus"
+    "home": "Mount Olympus",
+    "image": "apollo.jpg"
   },
 
   {
@@ -28,11 +30,12 @@
     "name": "Ares",
     "pantheon": "Greek",
     "gender": "Male",
-    "domain": "War",
-    "animal": "Serpent, Dog",
+    "domain": "⚔️ 🛡️",
+    "animal": "🐍 🐶",
     "mortal": false,
     "type": "God",
-    "home": "Mount Olympus"
+    "home": "Mount Olympus",
+    "image": "ares.jpg"
   },
 
   {
@@ -40,11 +43,12 @@
     "name": "Artemis",
     "pantheon": "Greek",
     "gender": "Female",
-    "domain": "Hunt",
-    "animal": "Deer",
+    "domain": "🏹",
+    "animal": "🦌",
     "mortal": false,
     "type": "Goddess",
-    "home": "Mount Olympus"
+    "home": "Mount Olympus",
+    "image": "artemis.jpg"
   },
 
   {
@@ -52,11 +56,12 @@
     "name": "Athena",
     "pantheon": "Greek",
     "gender": "Female",
-    "domain": "Wisdom, War",
-    "animal": "Owl",
+    "domain": "🦉 ⚔️ 🛡️",
+    "animal": "🦉",
     "mortal": false,
     "type": "Goddess",
-    "home": "Mount Olympus"
+    "home": "Mount Olympus",
+    "image": "athena.jpg"
   },
 
   {
@@ -64,11 +69,12 @@
     "name": "Hera",
     "pantheon": "Greek",
     "gender": "Female",
-    "domain": "Marriage",
-    "animal": "Cow, Lion",
+    "domain": "💍",
+    "animal": "🐄 🦁",
     "mortal": false,
     "type": "Goddess",
-    "home": "Mount Olympus"
+    "home": "Mount Olympus",
+    "image": "hera.jpg"
   },
 
   {
@@ -76,11 +82,12 @@
     "name": "Hermes",
     "pantheon": "Greek",
     "gender": "Male",
-    "domain": "Travel, Trade",
-    "animal": "Ram",
+    "domain": "🛣️ 💰",
+    "animal": "🐏",
     "mortal": false,
     "type": "God",
-    "home": "Mount Olympus"
+    "home": "Mount Olympus",
+    "image": "hermes.jpg"
   },
 
   {
@@ -88,11 +95,12 @@
     "name": "Poseidon",
     "pantheon": "Greek",
     "gender": "Male",
-    "domain": "Sea, Earthquakes",
-    "animal": "Horse, Bull",
+    "domain": "🌊 🌍",
+    "animal": "🐎 🐂",
     "mortal": false,
     "type": "God",
-    "home": "Mount Olympus"
+    "home": "Mount Olympus",
+    "image": "poseidon.jpg"
   },
 
   {
@@ -100,11 +108,12 @@
     "name": "Zeus",
     "pantheon": "Greek",
     "gender": "Male",
-    "domain": "Sky, Thunder",
-    "animal": "Eagle, Bull",
+    "domain": "🌩️ ⚡",
+    "animal": "🦅 🐂",
     "mortal": false,
     "type": "God",
-    "home": "Mount Olympus"
+    "home": "Mount Olympus",
+    "image": "zeus.jpg"
   },
 
   {
@@ -112,11 +121,12 @@
     "name": "Helios",
     "pantheon": "Greek",
     "gender": "Male",
-    "domain": "Sun",
-    "animal": "Horse",
+    "domain": "☀️",
+    "animal": "🐴",
     "mortal": false,
     "type": "God",
-    "home": "Mount Olympus"
+    "home": "Mount Olympus",
+    "image": "helios.jpg"
   },
 
   {
@@ -124,11 +134,12 @@
     "name": "Cronos",
     "pantheon": "Greek",
     "gender": "Male",
-    "domain": "Time",
-    "animal": "none",
+    "domain": "⏳",
+    "animal": "❌",
     "mortal": false,
     "type": "Titan",
-    "home": "Tartarus"
+    "home": "Tartarus",
+    "image": "cronos.jpg"
   },
 
   {
@@ -136,11 +147,12 @@
     "name": "Hades",
     "pantheon": "Greek",
     "gender": "Male",
-    "domain": "Underworld",
-    "animal": "Cerberus",
+    "domain": "💀 ⚰️",
+    "animal": "🐍 🐾",
     "mortal": false,
     "type": "God",
-    "home": "Underworld"
+    "home": "Underworld",
+    "image": "hades.jpg"
   },
 
   {
@@ -148,11 +160,12 @@
     "name": "Hephaestus",
     "pantheon": "Greek",
     "gender": "Male",
-    "domain": "Fire, Forge",
-    "animal": "Donkey",
+    "domain": "🔥 🔨",
+    "animal": "🐴",
     "mortal": false,
     "type": "God",
-    "home": "Mount Olympus"
+    "home": "Mount Olympus",
+    "image": "hephaestus.jpg"
   },
 
   {
@@ -160,11 +173,12 @@
     "name": "Gaia",
     "pantheon": "Greek",
     "gender": "Female",
-    "domain": "Earth",
-    "animal": "none",
+    "domain": "🌍",
+    "animal": "❌",
     "mortal": false,
     "type": "Titan",
-    "home": "Earth"
+    "home": "Earth",
+    "image": "gaia.jpg"
   },
 
   {
@@ -172,11 +186,12 @@
     "name": "Kratos",
     "pantheon": "Greek",
     "gender": "Male",
-    "domain": "Strength, Power",
-    "animal": "none",
+    "domain": "💪 ⚡",
+    "animal": "❌",
     "mortal": false,
     "type": "God",
-    "home": "Mount Olympus"
+    "home": "Mount Olympus",
+    "image": "kratos.jpg"
   },
 
   {
@@ -184,11 +199,12 @@
     "name": "Deimos",
     "pantheon": "Greek",
     "gender": "Male",
-    "domain": "Terror",
-    "animal": "none",
+    "domain": "😱",
+    "animal": "❌",
     "mortal": false,
     "type": "God",
-    "home": "Mount Olympus"
+    "home": "Mount Olympus",
+    "image": "deimos.jpg"
   },
 
   {
@@ -196,11 +212,12 @@
     "name": "Erinyes",
     "pantheon": "Greek",
     "gender": "Female",
-    "domain": "Vengeance",
-    "animal": "none",
+    "domain": "⚖️",
+    "animal": "❌",
     "mortal": false,
     "type": "Goddess",
-    "home": "Underworld"
+    "home": "Underworld",
+    "image": "erinyes.jpg"
   },
 
   {
@@ -208,11 +225,12 @@
     "name": "Hercules",
     "pantheon": "Greek",
     "gender": "Male",
-    "domain": "Strength, Heroism",
-    "animal": "Lion",
+    "domain": "💪 🦁",
+    "animal": "🦁",
     "mortal": true,
     "type": "Demigod",
-    "home": "Mount Olympus"
+    "home": "Mount Olympus",
+    "image": "hercules.jpg"
   },
 
   {
@@ -220,11 +238,12 @@
     "name": "Persephone",
     "pantheon": "Greek",
     "gender": "Female",
-    "domain": "Spring, Underworld",
-    "animal": "None",
+    "domain": "🌸 💀",
+    "animal": "❌",
     "mortal": false,
     "type": "Goddess",
-    "home": "Underworld"
+    "home": "Underworld",
+    "image": "persephone.jpg"
   },
 
   {
@@ -232,22 +251,12 @@
     "name": "Calliope",
     "pantheon": "Greek",
     "gender": "Female",
-    "domain": "Epic Poetry",
-    "animal": "None",
+    "domain": "🎭 📜",
+    "animal": "❌",
     "mortal": true,
     "type": "Demigod",
-    "home": "Sparta"
-  },
-
-  {
-    "id": 21,
-    "name": "Ceryx",
-    "pantheon": "Greek",
-    "gender": "Male",
-    "domain": "Messenger",
-    "animal": "None",
-    "mortal": true,
-    "type": "Demigod"
+    "home": "Sparta",
+    "image": "calliope.jpg"
   },
 
   {
@@ -255,11 +264,12 @@
     "name": "Perseus",
     "pantheon": "Greek",
     "gender": "Male",
-    "domain": "Heroism",
-    "animal": "None",
+    "domain": "💪",
+    "animal": "❌",
     "mortal": true,
     "type": "Demigod",
-    "home": "Argos"
+    "home": "Argos",
+    "image": "perseus.jpg"
   },
 
   {
@@ -267,11 +277,12 @@
     "name": "Theseus",
     "pantheon": "Greek",
     "gender": "Male",
-    "domain": "Heroism",
-    "animal": "None",
+    "domain": "💪",
+    "animal": "❌",
     "mortal": true,
     "type": "Demigod",
-    "home": "Athens"
+    "home": "Athens",
+    "image": "theseus.jpg"
   },
 
   {
@@ -279,11 +290,12 @@
     "name": "Achilles",
     "pantheon": "Greek",
     "gender": "Male",
-    "domain": "Heroism",
-    "animal": "None",
+    "domain": "💪",
+    "animal": "❌",
     "mortal": true,
     "type": "Demigod",
-    "home": "Phthia"
+    "home": "Phthia",
+    "image": "achilles.jpg"
   },
 
   {
@@ -291,11 +303,12 @@
     "name": "Oceanus",
     "pantheon": "Greek",
     "gender": "Male",
-    "domain": "Ocean, Sea",
-    "animal": "None",
+    "domain": "🌊 🌍",
+    "animal": "❌",
     "mortal": false,
     "type": "Titan",
-    "home": "Ocean"
+    "home": "Ocean",
+    "image": "oceanus.jpg"
   },
 
   {
@@ -303,11 +316,12 @@
     "name": "Hyperion",
     "pantheon": "Greek",
     "gender": "Male",
-    "domain": "Light",
-    "animal": "None",
+    "domain": "☀️",
+    "animal": "❌",
     "mortal": false,
     "type": "Titan",
-    "home": "Tartarus"
+    "home": "Tartarus",
+    "image": "hyperion.jpg"
   },
 
   {
@@ -315,11 +329,12 @@
     "name": "Rhea",
     "pantheon": "Greek",
     "gender": "Female",
-    "domain": "Fertility, Motherhood",
-    "animal": "None",
+    "domain": "🌸 🤰",
+    "animal": "❌",
     "mortal": false,
     "type": "Titan",
-    "home": "Tartarus"
+    "home": "Tartarus",
+    "image": "rhea.jpg"
   },
 
   {
@@ -327,11 +342,12 @@
     "name": "Sisters of Fate (Greek)",
     "pantheon": "Greek",
     "gender": "Female",
-    "domain": "Fate",
-    "animal": "None",
+    "domain": "🎲",
+    "animal": "❌",
     "mortal": false,
     "type": "Goddess",
-    "home": "Mount Olympus"
+    "home": "Mount Olympus",
+    "image": "sistersgreek.jpg"
   },
 
   {
@@ -339,11 +355,12 @@
     "name": "Odin",
     "pantheon": "Norse",
     "gender": "Male",
-    "domain": "Wisdom, War",
-    "animal": "Raven, Wolf",
+    "domain": "🦉 ⚔️",
+    "animal": "🐦‍⬛, 🐺",
     "mortal": false,
     "type": "Aesir God",
-    "home": "Asgard"
+    "home": "Asgard",
+    "image": "odin.jpg"
   },
 
   {
@@ -351,11 +368,12 @@
     "name": "Thor",
     "pantheon": "Norse",
     "gender": "Male",
-    "domain": "Thunder, Strength",
-    "animal": "Goat",
+    "domain": "⚡ 💪",
+    "animal": "🐐",
     "mortal": false,
     "type": "Aesir God",
-    "home": "Asgard"
+    "home": "Asgard",
+    "image": "thor.jpg"
   },
 
   {
@@ -363,11 +381,12 @@
     "name": "Heimdall",
     "pantheon": "Norse",
     "gender": "Male",
-    "domain": "Foresight, Surveillance",
-    "animal": "None",
+    "domain": "🔮 👁️",
+    "animal": "❌",
     "mortal": false,
     "type": "Aesir God",
-    "home": "Asgard"
+    "home": "Asgard",
+    "image": "heimdall.jpg"
   },
 
   {
@@ -375,11 +394,12 @@
     "name": "Sif",
     "pantheon": "Norse",
     "gender": "Female",
-    "domain": "Wheat, Earth",
-    "animal": "None",
+    "domain": "🌾 🌍",
+    "animal": "❌",
     "mortal": false,
     "type": "Aesir Goddess",
-    "home": "Asgard"
+    "home": "Asgard",
+    "image": "sif.jpg"
   },
 
   {
@@ -387,11 +407,12 @@
     "name": "Tyr",
     "pantheon": "Norse",
     "gender": "Male",
-    "domain": "War, Justice",
-    "animal": "Wolf",
+    "domain": "⚔️ ⚖️",
+    "animal": "🐺",
     "mortal": false,
     "type": "Aesir God",
-    "home": "Asgard"
+    "home": "Asgard",
+    "image": "tyr.jpg"
   },
 
   {
@@ -399,11 +420,12 @@
     "name": "Baldur",
     "pantheon": "Norse",
     "gender": "Male",
-    "domain": "Light, Purity",
-    "animal": "None",
+    "domain": "☀️ ✨",
+    "animal": "❌",
     "mortal": false,
     "type": "Aesir God",
-    "home": "Asgard"
+    "home": "Asgard",
+    "image": "baldur.jpg"
   },
 
   {
@@ -411,11 +433,12 @@
     "name": "Magni",
     "pantheon": "Norse",
     "gender": "Male",
-    "domain": "Thunder, Strength",
-    "animal": "None",
+    "domain": "⚡ 💪",
+    "animal": "❌",
     "mortal": true,
     "type": "Demigod",
-    "home": "Asgard"
+    "home": "Asgard",
+    "image": "magni.jpg"
   },
 
   {
@@ -423,11 +446,12 @@
     "name": "Modi",
     "pantheon": "Norse",
     "gender": "Male",
-    "domain": "Thunder, Courage",
-    "animal": "None",
+    "domain": "⚡ 🦸",
+    "animal": "❌",
     "mortal": true,
     "type": "Demigod",
-    "home": "Asgard"
+    "home": "Asgard",
+    "image": "modi.jpg"
   },
 
   {
@@ -435,11 +459,12 @@
     "name": "Thrúd",
     "pantheon": "Norse",
     "gender": " Female",
-    "domain": "Thunder, Strength",
-    "animal": "None",
+    "domain": "⚡ 💪",
+    "animal": "❌",
     "mortal": true,
     "type": "Demigod",
-    "home": "Asgard"
+    "home": "Asgard",
+    "image": "thrud.jpg"
   },
 
   {
@@ -447,11 +472,12 @@
     "name": "Loki",
     "pantheon": "Norse",
     "gender": "Male",
-    "domain": "Trickery, Mischief",
-    "animal": "None",
+    "domain": "🎭 🤡",
+    "animal": "❌",
     "mortal": false,
     "type": "Aesir God",
-    "home": "Asgard"
+    "home": "Asgard",
+    "image": "loki.jpg"
   },
 
   {
@@ -459,11 +485,12 @@
     "name": "Freya",
     "pantheon": "Norse",
     "gender": "Female",
-    "domain": "Sorcery, Beauty",
-    "animal": "None",
+    "domain": "🧙‍♀️ 💄",
+    "animal": "❌",
     "mortal": false,
     "type": "Vanir Goddess",
-    "home": "Asgard"
+    "home": "Asgard",
+    "image": "freya.jpg"
   },
 
   {
@@ -471,11 +498,12 @@
     "name": "Freyr",
     "pantheon": "Norse",
     "gender": "Male",
-    "domain": "Fertility, Prosperity",
-    "animal": "Boar",
+    "domain": "🌾 💰",
+    "animal": "🐗",
     "mortal": false,
     "type": "Vanir God",
-    "home": "Asgard"
+    "home": "Asgard",
+    "image": "freyr.jpg"
   },
 
   {
@@ -483,11 +511,12 @@
     "name": "Hildisvíni",
     "pantheon": "Norse",
     "gender": "Male",
-    "domain": "Warrior, Boar",
-    "animal": "Boar",
+    "domain": "🦸 🐗",
+    "animal": "🐗",
     "mortal": false,
     "type": "Vanir God",
-    "home": "Midgard"
+    "home": "Midgard",
+    "image": "hildisvini.jpg"
   },
 
   {
@@ -495,11 +524,12 @@
     "name": "Gná",
     "pantheon": "Norse",
     "gender": "Female",
-    "domain": "Wind, Fullness",
-    "animal": "none",
+    "domain": "🌬️ 🌾",
+    "animal": "❌",
     "mortal": false,
     "type": "Vanir Goddess",
-    "home": "Muspelheim"
+    "home": "Muspelheim",
+    "image": "gna.jpg"
   },
 
   {
@@ -507,11 +537,12 @@
     "name": "Surtr",
     "pantheon": "Norse",
     "gender": "Male",
-    "domain": "Fire, Destruction",
-    "animal": "None",
+    "domain": "🔥 💥",
+    "animal": "❌",
     "mortal": false,
     "type": "Titan",
-    "home": "Muspelheim"
+    "home": "Muspelheim",
+    "image": "surtr.jpg"
   },
 
   {
@@ -519,11 +550,12 @@
     "name": "Sisters of Fate (Norse)",
     "pantheon": "Norse",
     "gender": "Female",
-    "domain": "Fate",
-    "animal": "None",
+    "domain": "🎲",
+    "animal": "❌",
     "mortal": false,
     "type": "Goddess",
-    "home": "Asgard"
+    "home": "Asgard",
+    "image": "sistersnorse.jpg"
   },
 
   {
@@ -531,10 +563,11 @@
     "name": "Mimir",
     "pantheon": "Norse",
     "gender": "Male",
-    "domain": "Wisdom, Knowledge",
-    "animal": "None",
+    "domain": "🦉 📚",
+    "animal": "❌",
     "mortal": false,
     "type": "God",
-    "home": "Asgard"
+    "home": "Asgard",
+    "image": "mimir.jpg"
   }
 ]

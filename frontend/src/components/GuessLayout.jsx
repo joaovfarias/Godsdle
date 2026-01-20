@@ -1,9 +1,9 @@
 export default function GuessLayout({ children }) {
   return (
-    <div className="flex flex-col items-center gap-5 mt-5 justify-center">
-      <div className="flex flex-row items-center gap-10 justify-center text-yellow-950 drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
+    <div className="flex flex-col items-center gap-5 mt-10 justify-center">
+      <div className="flex flex-row items-center gap-10 justify-center text-black drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
         <div className="flex flex-col items-center w-20">
-          <p className="font-bold mb-2">Name</p>
+          <p className="font-bold mb-2">God</p>
           <hr className="w-full" />
         </div>
         <div className="flex flex-col items-center w-20">

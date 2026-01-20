@@ -25,6 +25,8 @@ export default function App() {
     }
     const randomIndex = Math.floor(Math.random() * gods.length);
     setAnswer(gods[randomIndex]);
+
+    console.log("Answer:", gods[randomIndex]);
   }, [gods]);
 
   return (
