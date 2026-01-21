@@ -14,6 +14,7 @@ export default function SubmitInput({
   submitGuess,
 }) {
   const [autoCompleteMatches, setAutoCompleteMatches] = useState([]);
+  const [loading, setLoading] = useState(false);
   const debouncedValue = useDebounce(guess, 50);
   const BACKEND_URL = config.BACKEND_URL;
 
@@ -51,9 +52,12 @@ export default function SubmitInput({
 
   useEffect(() => {
     if (!debouncedValue) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setLoading(false);
       return;
     }
 
+    setLoading(true);
     fetch(`${BACKEND_URL}/autocomplete?query=${debouncedValue}`)
       .then((res) => res.json())
       .then((data) => {
@@ -61,9 +65,11 @@ export default function SubmitInput({
           (god) => !matches.some((matchedGod) => matchedGod.name === god.name),
         );
         setAutoCompleteMatches(data);
+        setLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching god data:", error);
+        setLoading(false);
       });
   }, [debouncedValue, matches, BACKEND_URL]);
 
@@ -88,7 +94,8 @@ export default function SubmitInput({
       />
       {autoCompleteMatches.length === 0 &&
         guess.trim() &&
-        debouncedValue === guess.trim() && (
+        debouncedValue === guess.trim() &&
+        !loading && (
           <div className="absolute bg-white border border-gray-300 mt-1 rounded-md w-120 p-2 z-10">
             No matches found
           </div>
