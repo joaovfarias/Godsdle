@@ -2,6 +2,7 @@ import backgroundImage from "./assets/background.webp";
 import { useEffect, useState, useRef } from "react";
 import { getStats, getTodayGame } from "./storage/storage.js";
 import { saveTodayGame, saveStats } from "./storage/storage.js";
+import config from "./config/env.js";
 import GuessLayout from "./components/GuessLayout.jsx";
 import Guess from "./components/Guess.jsx";
 import LogoOptions from "./components/LogoOptions.jsx";
@@ -19,9 +20,10 @@ export default function App() {
   const [todayGame, setTodayGame] = useState(null);
   const [stats, setStats] = useState(null);
   const [initialGuessCount, setInitialGuessCount] = useState(0);
+  const [showStats, setShowStats] = useState(false);
   const hasInitialized = useRef(false);
 
-  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+  const BACKEND_URL = config.BACKEND_URL;
 
   useEffect(() => {
     fetch(`${BACKEND_URL}/today`)
@@ -124,7 +126,11 @@ export default function App() {
   }
 
   if (!todayGame || !stats) {
-    return <div>Loading...</div>;
+    return (
+      <div className="w-full min-h-screen flex items-center justify-center">
+        Loading...
+      </div>
+    );
   }
 
   return (
@@ -136,7 +142,12 @@ export default function App() {
         className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
       >
         <div className="flex flex-col items-center">
-          <LogoOptions answer={answer} />
+          <LogoOptions
+            answer={answer}
+            showStats={showStats}
+            onOpenStats={() => setShowStats(true)}
+            onCloseStats={() => setShowStats(false)}
+          />
           <SubmitInput
             setGuesses={setGuesses}
             guess={guess}
@@ -171,7 +182,13 @@ export default function App() {
           </GuessLayout>
         )}
 
-        {victory && <Victory answer={answer} todayGame={todayGame} />}
+        {victory && (
+          <Victory
+            answer={answer}
+            todayGame={todayGame}
+            onShowStats={() => setShowStats(true)}
+          />
+        )}
       </div>
     </>
   );

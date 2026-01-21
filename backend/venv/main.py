@@ -28,7 +28,7 @@ app.mount("/images", StaticFiles(directory=str(IMAGES_DIR)), name="images")
 def root():
     return {"status": "funcinando"}
 
-START_DATE = date(2026, 1, 1)
+START_DATE = date(2026, 3, 1)
 
 @app.get("/today")
 def today():

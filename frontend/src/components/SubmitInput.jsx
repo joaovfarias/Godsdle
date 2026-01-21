@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import useDebounce from "../hooks/useDebounce.jsx";
+import config from "../config/env.js";
 
 export default function SubmitInput({
   setGuesses,
@@ -7,7 +8,6 @@ export default function SubmitInput({
   setGuess,
   data,
   matches,
-  setMatches,
   setVictory,
   victory,
   answer,
@@ -15,7 +15,7 @@ export default function SubmitInput({
 }) {
   const [autoCompleteMatches, setAutoCompleteMatches] = useState([]);
   const debouncedValue = useDebounce(guess, 50);
-  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+  const BACKEND_URL = config.BACKEND_URL;
 
   const handleSubmitGuess = (e, selectedMatch = null) => {
     if (autoCompleteMatches.length === 0 && !selectedMatch) {
@@ -54,7 +54,7 @@ export default function SubmitInput({
       return;
     }
 
-    fetch(`http://localhost:8000/autocomplete?query=${debouncedValue}`)
+    fetch(`${BACKEND_URL}/autocomplete?query=${debouncedValue}`)
       .then((res) => res.json())
       .then((data) => {
         data = data.filter(
@@ -65,7 +65,7 @@ export default function SubmitInput({
       .catch((error) => {
         console.error("Error fetching god data:", error);
       });
-  }, [debouncedValue, matches]);
+  }, [debouncedValue, matches, BACKEND_URL]);
 
   return (
     <div className="mt-45">

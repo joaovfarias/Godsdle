@@ -6,7 +6,7 @@
     "gender": "Female",
     "domain": "❤️ 🌹",
     "symbol": "🌹",
-    "personality": "Charming, Provocative",
+    "personality": "Provocative, Cunning, Proud",
     "type": "Goddess",
     "realm": "Mount Olympus",
     "image": "aphrodite.jpg"
@@ -19,7 +19,7 @@
     "gender": "Male",
     "domain": "🔮 🎵",
     "symbol": "🦢",
-    "personality": "Calm, Wise",
+    "personality": "Wise, Calm, Proud",
     "type": "God",
     "realm": "Mount Olympus",
     "image": "apollo.jpg"
@@ -32,7 +32,7 @@
     "gender": "Male",
     "domain": "⚔️ 🛡️",
     "symbol": "🐗",
-    "personality": "Aggressive, Chaotic",
+    "personality": "Aggressive, Chaotic, Proud",
     "type": "God",
     "realm": "Mount Olympus",
     "image": "ares.jpg"
@@ -45,7 +45,7 @@
     "gender": "Female",
     "domain": "🏹",
     "symbol": "🐇",
-    "personality": "Independent, Protective",
+    "personality": "Protective, Stoic, Calm",
     "type": "Goddess",
     "realm": "Mount Olympus",
     "image": "artemis.jpg"
@@ -58,7 +58,7 @@
     "gender": "Female",
     "domain": "🦉 ⚔️ 🛡️",
     "symbol": "🦉",
-    "personality": "Protective, Calm",
+    "personality": "Wise, Calm, Protective",
     "type": "Goddess",
     "realm": "Mount Olympus",
     "image": "athena.jpg"
@@ -71,7 +71,7 @@
     "gender": "Female",
     "domain": "💍",
     "symbol": "🐄 🦁",
-    "personality": "Jealous, Vengeful",
+    "personality": "Vengeful, Proud, Protective",
     "type": "Goddess",
     "realm": "Mount Olympus",
     "image": "hera.jpg"
@@ -84,7 +84,7 @@
     "gender": "Male",
     "domain": "🛣️ 💰",
     "symbol": "⚕️",
-    "personality": "Cunning, Playful",
+    "personality": "Cunning, Playful, Chaotic",
     "type": "God",
     "realm": "Mount Olympus",
     "image": "hermes.jpg"
@@ -97,7 +97,7 @@
     "gender": "Male",
     "domain": "🌊 🌍",
     "symbol": "🐬",
-    "personality": "Arrogant, Vengeful",
+    "personality": "Vengeful, Aggressive, Proud",
     "type": "God",
     "realm": "Mount Olympus",
     "image": "poseidon.jpg"
@@ -110,7 +110,7 @@
     "gender": "Male",
     "domain": "🌩️ ⚡",
     "symbol": "🦅",
-    "personality": "Provocative, Proud",
+    "personality": "Proud, Aggressive, Vengeful",
     "type": "God",
     "realm": "Mount Olympus",
     "image": "zeus.jpg"
@@ -123,7 +123,7 @@
     "gender": "Male",
     "domain": "☀️",
     "symbol": "☀️",
-    "personality": "Arrogant, Vengeful",
+    "personality": "Proud, Stoic, Vengeful",
     "type": "God",
     "realm": "Mount Olympus",
     "image": "helios.jpg"
@@ -136,7 +136,7 @@
     "gender": "Male",
     "domain": "⏳",
     "symbol": "⏳ 🐍",
-    "personality": "Patient, Stoic",
+    "personality": "Stoic, Vengeful, Proud",
     "type": "Titan",
     "realm": "Tartarus",
     "image": "cronos.jpg"
@@ -149,7 +149,7 @@
     "gender": "Male",
     "domain": "💀 ⚰️",
     "symbol": "🐍",
-    "personality": "Arrogant, Vengeful",
+    "personality": "Stoic, Protective, Vengeful",
     "type": "God",
     "realm": "Underworld",
     "image": "hades.jpg"
@@ -162,7 +162,7 @@
     "gender": "Male",
     "domain": "🔥 🔨",
     "symbol": "⛏️",
-    "personality": "Calm",
+    "personality": "Calm, Wise, Stoic",
     "type": "God",
     "realm": "Mount Olympus",
     "image": "hephaestus.jpg"
@@ -175,7 +175,7 @@
     "gender": "Female",
     "domain": "🌍",
     "symbol": "🌍",
-    "personality": "Wise, Protective",
+    "personality": "Wise, Protective, Stoic",
     "type": "Titan",
     "realm": "Earth",
     "image": "gaia.jpg"
@@ -188,7 +188,7 @@
     "gender": "Male",
     "domain": "💪 ⚔️",
     "symbol": "💪 ⚔️",
-    "personality": "Protective, Aggressive",
+    "personality": "Aggressive, Protective, Stoic",
     "type": "God",
     "realm": "Midgard",
     "image": "kratos.jpg"
@@ -201,7 +201,7 @@
     "gender": "Male",
     "domain": "😱",
     "symbol": "🩸",
-    "personality": "Chaotic, Aggressive",
+    "personality": "Aggressive, Chaotic, Vengeful",
     "type": "God",
     "realm": "Mount Olympus",
     "image": "deimos.jpg"
@@ -213,7 +213,7 @@
     "gender": "Female",
     "domain": "⚖️",
     "symbol": "🐍",
-    "personality": "Vengeful, Stoic",
+    "personality": "Vengeful, Stoic, Aggressive",
     "type": "Goddess",
     "realm": "Underworld",
     "image": "erinyes.jpg"
@@ -225,7 +225,7 @@
     "gender": "Male",
     "domain": "💪 🦁",
     "symbol": "🦁",
-    "personality": "Aggressive, Protective",
+    "personality": "Proud, Aggressive, Protective",
     "type": "Demigod",
     "realm": "Mount Olympus",
     "image": "hercules.jpg"
@@ -237,7 +237,7 @@
     "gender": "Female",
     "domain": "🌸 💀",
     "symbol": "🌾",
-    "personality": "Calm, Stoic",
+    "personality": "Calm, Protective, Stoic",
     "type": "Goddess",
     "realm": "Underworld",
     "image": "persephone.jpg"
@@ -249,7 +249,7 @@
     "gender": "Female",
     "domain": "🎭 📜",
     "symbol": "📜",
-    "personality": "Wise, Calm",
+    "personality": "Wise, Calm, Proud",
     "type": "Demigod",
     "realm": "Sparta",
     "image": "calliope.jpg"
@@ -261,7 +261,7 @@
     "gender": "Male",
     "domain": "💪",
     "symbol": "🛡️",
-    "personality": "Brave, Protective",
+    "personality": "Protective, Proud, Stoic",
     "type": "Demigod",
     "realm": "Argos",
     "image": "perseus.jpg"
@@ -273,7 +273,7 @@
     "gender": "Male",
     "domain": "💪",
     "symbol": "🧵",
-    "personality": "Cunning, Protective",
+    "personality": "Proud, Aggressive, Protective",
     "type": "Demigod",
     "realm": "Athens",
     "image": "theseus.jpg"
@@ -285,7 +285,7 @@
     "gender": "Male",
     "domain": "💪",
     "symbol": "🦶",
-    "personality": "Proud, Aggressive",
+    "personality": "Proud, Aggressive, Stoic",
     "type": "Demigod",
     "realm": "Phthia",
     "image": "achilles.jpg"
@@ -297,7 +297,7 @@
     "gender": "Male",
     "domain": "🌊 🌍",
     "symbol": "🌐",
-    "personality": "Calm, Stoic",
+    "personality": "Calm, Stoic, Wise",
     "type": "Titan",
     "realm": "Ocean",
     "image": "oceanus.jpg"
@@ -309,7 +309,7 @@
     "gender": "Male",
     "domain": "☀️",
     "symbol": "👁️",
-    "personality": "Proud, Stoic",
+    "personality": "Proud, Stoic, Wise",
     "type": "Titan",
     "realm": "Tartarus",
     "image": "hyperion.jpg"
@@ -321,7 +321,7 @@
     "gender": "Female",
     "domain": "🌸 🤰",
     "symbol": "👑",
-    "personality": "Protective, Calm",
+    "personality": "Protective, Calm, Wise",
     "type": "Titan",
     "realm": "Tartarus",
     "image": "rhea.jpg"
@@ -333,7 +333,7 @@
     "gender": "Female",
     "domain": "🎲",
     "symbol": "🧵",
-    "personality": "Stoic, Wise",
+    "personality": "Stoic, Wise, Calm",
     "type": "Goddess",
     "realm": "Mount Olympus",
     "image": "sistersgreek.jpg"
@@ -345,7 +345,7 @@
     "gender": "Male",
     "domain": "🦉 ⚔️",
     "symbol": "🐦‍⬛",
-    "personality": "Wise, Cunning",
+    "personality": "Wise, Cunning, Proud",
     "type": "Aesir God",
     "realm": "Asgard",
     "image": "odin.jpg"
@@ -357,7 +357,7 @@
     "gender": "Male",
     "domain": "⚡ 💪",
     "symbol": "🐐",
-    "personality": "Aggressive, Proud",
+    "personality": "Aggressive, Proud, Protective",
     "type": "Aesir God",
     "realm": "Asgard",
     "image": "thor.jpg"
@@ -369,7 +369,7 @@
     "gender": "Male",
     "domain": "🔮 👁️",
     "symbol": "📯",
-    "personality": "Playful, Proud",
+    "personality": "Protective, Stoic, Wise",
     "type": "Aesir God",
     "realm": "Asgard",
     "image": "heimdall.jpg"
@@ -381,7 +381,7 @@
     "gender": "Female",
     "domain": "🌾 🌍",
     "symbol": "🌾",
-    "personality": "Calm, Protective",
+    "personality": "Calm, Protective, Stoic",
     "type": "Aesir Goddess",
     "realm": "Asgard",
     "image": "sif.jpg"
@@ -393,7 +393,7 @@
     "gender": "Male",
     "domain": "⚔️ ⚖️",
     "symbol": "🩸",
-    "personality": "Stoic, Wise",
+    "personality": "Protective, Stoic, Proud",
     "type": "Aesir God",
     "realm": "Asgard",
     "image": "tyr.jpg"
@@ -405,7 +405,7 @@
     "gender": "Male",
     "domain": "☀️ ✨",
     "symbol": "🌿",
-    "personality": "Calm, Wise",
+    "personality": "Calm, Proud, Protective",
     "type": "Aesir God",
     "realm": "Asgard",
     "image": "baldur.jpg"
@@ -417,7 +417,7 @@
     "gender": "Male",
     "domain": "⚡ 💪",
     "symbol": "🔥",
-    "personality": "Aggressive, Proud",
+    "personality": "Aggressive, Proud, Protective",
     "type": "Demigod",
     "realm": "Asgard",
     "image": "magni.jpg"
@@ -429,7 +429,7 @@
     "gender": "Male",
     "domain": "⚡ 🦸",
     "symbol": "🔥",
-    "personality": "Chaotic, Aggressive",
+    "personality": "Aggressive, Chaotic, Proud",
     "type": "Demigod",
     "realm": "Asgard",
     "image": "modi.jpg"
@@ -441,7 +441,7 @@
     "gender": "Female",
     "domain": "⚡ 💪",
     "symbol": "🛡️",
-    "personality": "Protective, Proud",
+    "personality": "Protective, Aggressive, Proud",
     "type": "Demigod",
     "realm": "Asgard",
     "image": "thrud.jpg"
@@ -453,7 +453,7 @@
     "gender": "Male",
     "domain": "🎭 🤡",
     "symbol": "🐍",
-    "personality": "Chaotic, Playful",
+    "personality": "Cunning, Chaotic, Playful",
     "type": "Aesir God",
     "realm": "Asgard",
     "image": "loki.jpg"
@@ -465,7 +465,7 @@
     "gender": "Female",
     "domain": "🧙‍♀️ 💄",
     "symbol": "🐈",
-    "personality": "Proud, Wise",
+    "personality": "Protective, Proud, Playful",
     "type": "Vanir Goddess",
     "realm": "Asgard",
     "image": "freya.jpg"
@@ -477,7 +477,7 @@
     "gender": "Male",
     "domain": "🌾 💰",
     "symbol": "🐗",
-    "personality": "Calm, Protective",
+    "personality": "Protective, Calm, Proud",
     "type": "Vanir God",
     "realm": "Asgard",
     "image": "freyr.jpg"
@@ -489,7 +489,7 @@
     "gender": "Male",
     "domain": "🦸 🐗",
     "symbol": "🐗",
-    "personality": "Aggressive, Loyal",
+    "personality": "Protective, Aggressive, Proud",
     "type": "Vanir God",
     "realm": "Midgard",
     "image": "hildisvini.jpg"
@@ -501,7 +501,7 @@
     "gender": "Female",
     "domain": "🌬️ 🌾",
     "symbol": "🐎",
-    "personality": "Calm, Protective",
+    "personality": "Protective, Calm, Wise",
     "type": "Vanir Goddess",
     "realm": "Muspelheim",
     "image": "gna.jpg"
@@ -513,7 +513,7 @@
     "gender": "Male",
     "domain": "🔥 💥",
     "symbol": "🌋",
-    "personality": "Chaotic, Vengeful",
+    "personality": "Aggressive, Chaotic, Proud",
     "type": "Titan",
     "realm": "Muspelheim",
     "image": "surtr.jpg"
@@ -525,7 +525,7 @@
     "gender": "Female",
     "domain": "🎲",
     "symbol": "🧵",
-    "personality": "Stoic, Wise",
+    "personality": "Stoic, Wise, Calm",
     "type": "Goddess",
     "realm": "Asgard",
     "image": "sistersnorse.jpg"
@@ -537,7 +537,7 @@
     "gender": "Male",
     "domain": "🦉 📚",
     "symbol": "💧",
-    "personality": "Wise, Stoic",
+    "personality": "Wise, Calm, Stoic",
     "type": "God",
     "realm": "Asgard",
     "image": "mimir.jpg"

@@ -7,9 +7,13 @@ import { MdOutlineHelpOutline } from "react-icons/md";
 import { IoIosStats } from "react-icons/io";
 import { IoSettingsOutline } from "react-icons/io5";
 
-export default function LogoOptions({ answer }) {
+export default function LogoOptions({
+  answer,
+  showStats,
+  onOpenStats,
+  onCloseStats,
+}) {
   const [showHelp, setShowHelp] = useState(false);
-  const [showStats, setShowStats] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
 
   const handleHelpClick = () => {
@@ -17,7 +21,7 @@ export default function LogoOptions({ answer }) {
   };
 
   const handleStatsClick = () => {
-    setShowStats(true);
+    onOpenStats?.();
   };
 
   const handleSettingsClick = () => {
@@ -27,7 +31,7 @@ export default function LogoOptions({ answer }) {
   return (
     <>
       <Help show={showHelp} onClose={() => setShowHelp(false)} />
-      <Stats show={showStats} onClose={() => setShowStats(false)} />
+      <Stats show={showStats} onClose={onCloseStats} />
       <Settings
         show={showSettings}
         onClose={() => setShowSettings(false)}

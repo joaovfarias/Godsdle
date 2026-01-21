@@ -1,3 +1,5 @@
+import config from "../config/env.js";
+
 export default function Guess({ guess, answer, animate = true }) {
   const prefix =
     "flex flex-row items-center justify-center w-25 h-25 rounded-lg text-center text-white border border-gray-700 inset-shadow shadow-inner shadow-black break-words overflow-hidden hover:brightness-125 transition-all duration-100";
@@ -7,7 +9,7 @@ export default function Guess({ guess, answer, animate = true }) {
     partial: prefix + " bg-yellow-500 ",
   };
 
-  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+  const BACKEND_URL = config.BACKEND_URL;
 
   if (!answer) {
     return null;
