@@ -2,8 +2,9 @@ import backgroundImage from "./assets/background.webp";
 import { useEffect, useState } from "react";
 import GuessLayout from "./components/GuessLayout.jsx";
 import Guess from "./components/Guess.jsx";
-import LogoStats from "./components/LogoStats.jsx";
+import LogoOptions from "./components/LogoOptions.jsx";
 import SubmitInput from "./components/SubmitInput.jsx";
+import Victory from "./components/Victory.jsx";
 import "./index.css";
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
   const [gods, setGods] = useState([]);
   const [answer, setAnswer] = useState(null);
   const [matches, setMatches] = useState([]);
+  const [victory, setVictory] = useState(false);
 
   useEffect(() => {
     fetch("http://127.0.0.1:8000/gods")
@@ -38,7 +40,7 @@ export default function App() {
         className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
       >
         <div className="flex flex-col items-center">
-          <LogoStats />
+          <LogoOptions answer={answer} />
           <SubmitInput
             setGuesses={setGuesses}
             guess={guess}
@@ -46,6 +48,9 @@ export default function App() {
             data={gods}
             matches={matches}
             setMatches={setMatches}
+            setVictory={setVictory}
+            victory={victory}
+            answer={answer}
           />
         </div>
 
@@ -59,6 +64,8 @@ export default function App() {
               ))}
           </GuessLayout>
         )}
+
+        {victory && <Victory answer={answer} />}
       </div>
     </>
   );

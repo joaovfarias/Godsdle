@@ -1,6 +1,6 @@
 export default function Guess({ guess, answer }) {
   const prefix =
-    "flex flex-row items-center justify-center w-25 h-25 rounded-lg text-center border border-gray-700 inset-shadow shadow-inner shadow-black break-words overflow-hidden hover:brightness-125 transition-all duration-100";
+    "flex flex-row items-center justify-center w-25 h-25 rounded-lg text-center text-white border border-gray-700 inset-shadow shadow-inner shadow-black break-words overflow-hidden hover:brightness-125 transition-all duration-100";
   const boxColors = {
     correct: prefix + " bg-green-500 ",
     incorrect: prefix + " bg-red-500 ",
@@ -89,27 +89,33 @@ export default function Guess({ guess, answer }) {
         </div>
         <div
           className={
-            (guess.animal === answer.animal
+            (guess.symbol === answer.symbol
               ? boxColors.correct
-              : guess.animal
+              : guess.symbol
                     .split(" ")
-                    .some((emoji) => answer.animal.includes(emoji))
+                    .some((emoji) => answer.symbol.includes(emoji))
                 ? boxColors.partial
                 : boxColors.incorrect) + " flip-card text-2xl"
           }
           style={{ animationDelay: "2s" }}
         >
-          <p>{guess.animal}</p>
+          <p>{guess.symbol}</p>
         </div>
         <div
           className={
-            (guess.mortal === answer.mortal
+            (guess.personality === answer.personality
               ? boxColors.correct
-              : boxColors.incorrect) + " flip-card"
+              : guess.personality
+                    .split(", ")
+                    .some((trait) =>
+                      answer.personality.split(", ").includes(trait),
+                    )
+                ? boxColors.partial
+                : boxColors.incorrect) + " flip-card"
           }
           style={{ animationDelay: "2.5s" }}
         >
-          <p>{guess.mortal ? "Yes" : "No"}</p>
+          <p className="text-xs">{guess.personality}</p>
         </div>
         <div
           className={
@@ -123,13 +129,13 @@ export default function Guess({ guess, answer }) {
         </div>
         <div
           className={
-            (guess.home === answer.home
+            (guess.realm === answer.realm
               ? boxColors.correct
               : boxColors.incorrect) + " flip-card"
           }
           style={{ animationDelay: "3.5s" }}
         >
-          <p>{guess.home}</p>
+          <p className="text-sm">{guess.realm}</p>
         </div>
       </div>
     </>

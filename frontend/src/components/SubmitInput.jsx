@@ -8,6 +8,9 @@ export default function SubmitInput({
   data,
   matches,
   setMatches,
+  setVictory,
+  victory,
+  answer,
 }) {
   const [autoCompleteMatches, setAutoCompleteMatches] = useState([]);
   const debouncedValue = useDebounce(guess, 50);
@@ -40,6 +43,10 @@ export default function SubmitInput({
     if (foundGod) {
       setMatches((prev) => [...prev, foundGod]);
     }
+
+    if (foundGod && foundGod.name.toLowerCase() === answer.name.toLowerCase()) {
+      setTimeout(() => setVictory(true), 4000);
+    }
   };
 
   useEffect(() => {
@@ -61,10 +68,11 @@ export default function SubmitInput({
   }, [debouncedValue, matches]);
 
   return (
-    <div className="mt-20">
+    <div className="mt-45">
       <input
         type="text"
         value={guess}
+        disabled={victory}
         onChange={(e) => {
           setGuess(e.target.value);
           setAutoCompleteMatches([]);
@@ -75,7 +83,8 @@ export default function SubmitInput({
           }
         }}
         placeholder="Guess the god..."
-        className="rounded-md border border-gray-700 p-2 w-120 bg-gray-100"
+        className="rounded-md border-2 p-2 w-120 bg-gray-100 focus:outline-none focus:ring-2"
+        style={{ borderColor: "#ebbe6d", "--tw-ring-color": "#ebbe6d" }}
       />
       {autoCompleteMatches.length === 0 &&
         guess.trim() &&
@@ -111,8 +120,11 @@ export default function SubmitInput({
         onClick={(e) => {
           handleSubmitGuess(e);
         }}
-        className="ml-2 rounded-md bg-gray-500 px-4 py-2 text-white border-black inset-shadow shadow-inner shadow-black hover:bg-gray-600"
-        disabled={!guess.trim()}
+        className="ml-2 rounded-md px-4 py-2 text-white font-semibold border-black shadow-lg transition-all duration-200 hover:brightness-110"
+        style={{
+          background: "linear-gradient(135deg, #ebbe6d 0%, #a68f4f 100%)",
+        }}
+        disabled={!guess.trim() || victory}
       >
         Submit
       </button>
