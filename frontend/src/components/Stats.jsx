@@ -1,6 +1,21 @@
 import { IoMdClose } from "react-icons/io";
+import { useEffect, useState } from "react";
+import { getStats } from "../storage/storage.js";
 
 export default function Stats({ show, onClose }) {
+  const [stats, setStats] = useState({
+    gamesPlayed: 0,
+    gamesWon: 0,
+    currentStreak: 0,
+    maxStreak: 0,
+  });
+
+  useEffect(() => {
+    const currentStats = getStats();
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setStats(currentStats);
+  }, []);
+
   if (!show) return null;
 
   return (
@@ -9,13 +24,21 @@ export default function Stats({ show, onClose }) {
         <div className="flex-1">
           <p className="text-lg font-bold  text-black">Statistics</p>
           <p className="mt-2 text-sm font-semibold leading-relaxed">
-            Games played: <span className="font-normal">1234</span>
+            Games played:{" "}
+            <span className="font-normal">{stats.gamesPlayed}</span>
             <br />
-            Win percentage: <span className="font-normal">56%</span>
+            Win percentage:{" "}
+            <span className="font-normal">
+              {stats.gamesPlayed > 0
+                ? Math.round((stats.gamesWon / stats.gamesPlayed) * 100)
+                : 0}
+              %
+            </span>
             <br />
-            Current streak: <span className="font-normal">5</span>
+            Current streak:{" "}
+            <span className="font-normal">{stats.currentStreak}</span>
             <br />
-            Max streak: <span className="font-normal">12</span>
+            Max streak: <span className="font-normal">{stats.maxStreak}</span>
           </p>
         </div>
         <button

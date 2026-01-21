@@ -11,6 +11,7 @@ export default function SubmitInput({
   setVictory,
   victory,
   answer,
+  submitGuess,
 }) {
   const [autoCompleteMatches, setAutoCompleteMatches] = useState([]);
   const debouncedValue = useDebounce(guess, 50);
@@ -40,13 +41,12 @@ export default function SubmitInput({
     const foundGod = data.find(
       (god) => god.name.toLowerCase() === finalGuess.toLowerCase(),
     );
-    if (foundGod) {
-      setMatches((prev) => [...prev, foundGod]);
-    }
 
     if (foundGod && foundGod.name.toLowerCase() === answer.name.toLowerCase()) {
       setTimeout(() => setVictory(true), 4000);
     }
+
+    submitGuess(foundGod, answer);
   };
 
   useEffect(() => {
