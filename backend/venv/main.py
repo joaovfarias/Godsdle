@@ -1,4 +1,5 @@
-from datetime import date
+import os
+from datetime import date, datetime
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -8,15 +9,28 @@ from routers.autocomplete import router as autocomplete_router
 from services.gods_service import load_gods
 
 
+def get_allowed_origins():
+    raw = os.getenv("FRONTEND_ORIGINS", "http://localhost:5173")
+    return [origin.strip() for origin in raw.split(",") if origin.strip()]
+
+
+def get_start_date():
+    raw = os.getenv("START_DATE", "2026-03-01")
+    try:
+        return datetime.fromisoformat(raw).date()
+    except ValueError:
+        return date(2026, 3, 1)
+
+
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=get_allowed_origins(),
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
-)   
+)
 
 app.include_router(gods_router)
 app.include_router(autocomplete_router)
@@ -28,7 +42,7 @@ app.mount("/images", StaticFiles(directory=str(IMAGES_DIR)), name="images")
 def root():
     return {"status": "funcinando"}
 
-START_DATE = date(2026, 3, 1)
+START_DATE = get_start_date()
 
 @app.get("/today")
 def today():
