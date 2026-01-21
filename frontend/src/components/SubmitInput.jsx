@@ -82,6 +82,7 @@ export default function SubmitInput({
         onChange={(e) => {
           setGuess(e.target.value);
           setAutoCompleteMatches([]);
+          setLoading(true);
         }}
         onKeyDown={(e) => {
           if (e.key === "Enter") {
