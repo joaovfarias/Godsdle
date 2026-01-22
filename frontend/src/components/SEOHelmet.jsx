@@ -34,6 +34,8 @@ export default function SEOHelmet() {
       {/* Additional SEO */}
       <meta name="theme-color" content="#1a1a1a" />
       <link rel="canonical" href={window.location.href} />
+
+      <meta property="og:site_name" content="Godsdle" />
     </Helmet>
   );
 }
