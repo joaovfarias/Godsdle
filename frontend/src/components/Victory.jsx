@@ -99,8 +99,10 @@ export default function Victory({ answer, todayGame, onShowStats }) {
         }
       `}</style>
 
-      <div
+      <section
         ref={sectionRef}
+        aria-label="Victory summary"
+        aria-live="polite"
         className="flex flex-col items-center justify-center gap-4 mb-8 mt-150"
       >
         <div
@@ -144,7 +146,7 @@ export default function Victory({ answer, todayGame, onShowStats }) {
             <div className="text-2xl font-bold">{timeLeft}</div>
           </div>
         </div>
-      </div>
+      </section>
 
       <div style={{ height: "50vh" }} />
     </>

@@ -1,7 +1,13 @@
 export default function GuessLayout({ children }) {
   return (
-    <div className="flex flex-col items-center gap-5 mt-10 justify-center">
-      <div className="flex flex-row items-center gap-10 justify-center text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)] backdrop-blur-[2px] px-8 py-4 rounded-lg">
+    <section
+      className="flex flex-col items-center gap-5 mt-10 justify-center"
+      aria-label="Guess results"
+    >
+      <header
+        className="flex flex-row items-center gap-10 justify-center text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)] backdrop-blur-[2px] px-8 py-4 rounded-lg"
+        aria-label="Guess legend"
+      >
         <div className="flex flex-col items-center w-20">
           <div className="group relative cursor-default">
             <p className="font-bold mb-2">God</p>
@@ -76,11 +82,14 @@ export default function GuessLayout({ children }) {
           </div>
           <hr className="w-full" />
         </div>
-      </div>
+      </header>
 
-      <div className="flex flex-col items-center justify-center">
+      <section
+        className="flex flex-col items-center justify-center"
+        aria-label="Guess attempts"
+      >
         {children}
-      </div>
-    </div>
+      </section>
+    </section>
   );
 }

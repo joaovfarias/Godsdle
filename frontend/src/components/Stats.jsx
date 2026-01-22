@@ -19,7 +19,12 @@ export default function Stats({ show, onClose }) {
   if (!show) return null;
 
   return (
-    <div className="absolute left-1/2 top-50 z-10 w-[min(90vw,760px)] -translate-x-1/2 rounded-xl border border-slate-200 bg-white/90 px-6 py-4 text-slate-800 shadow-xl backdrop-blur-sm">
+    <section
+      role="dialog"
+      aria-modal="true"
+      aria-label="Statistics"
+      className="absolute left-1/2 top-50 z-10 w-[min(90vw,760px)] -translate-x-1/2 rounded-xl border border-slate-200 bg-white/90 px-6 py-4 text-slate-800 shadow-xl backdrop-blur-sm"
+    >
       <div className="flex items-start gap-3">
         <div className="flex-1">
           <p className="text-lg font-bold  text-black">Statistics</p>
@@ -50,6 +55,6 @@ export default function Stats({ show, onClose }) {
           <IoMdClose size={22} />
         </button>
       </div>
-    </div>
+    </section>
   );
 }

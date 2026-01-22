@@ -8,6 +8,7 @@ import Guess from "./components/Guess.jsx";
 import LogoOptions from "./components/LogoOptions.jsx";
 import SubmitInput from "./components/SubmitInput.jsx";
 import Victory from "./components/Victory.jsx";
+import SEOHelmet from "./components/SEOHelmet.jsx";
 import "./index.css";
 
 export default function App() {
@@ -127,69 +128,85 @@ export default function App() {
 
   if (!todayGame || !stats) {
     return (
-      <div className="w-full min-h-screen flex items-center justify-center">
+      <main
+        className="w-full min-h-screen flex items-center justify-center"
+        aria-busy="true"
+      >
         Loading...
-      </div>
+      </main>
     );
   }
 
   return (
     <>
-      <div
+      <SEOHelmet />
+      <main
         style={{
           backgroundImage: `url(${backgroundImage})`,
         }}
         className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
       >
-        <div className="flex flex-col items-center">
+        <section
+          className="flex flex-col items-center"
+          aria-label="Game controls"
+        >
           <LogoOptions
             answer={answer}
             showStats={showStats}
             onOpenStats={() => setShowStats(true)}
             onCloseStats={() => setShowStats(false)}
           />
-          <SubmitInput
-            setGuesses={setGuesses}
-            guess={guess}
-            setGuess={setGuess}
-            data={gods}
-            matches={matches}
-            setMatches={setMatches}
-            setVictory={setVictory}
-            victory={victory}
-            answer={answer}
-            submitGuess={submitGuess}
-          />
-        </div>
+          <section
+            aria-label="Submit your guess"
+            className="w-full flex flex-col items-center"
+          >
+            <SubmitInput
+              setGuesses={setGuesses}
+              guess={guess}
+              setGuess={setGuess}
+              data={gods}
+              matches={matches}
+              setMatches={setMatches}
+              setVictory={setVictory}
+              victory={victory}
+              answer={answer}
+              submitGuess={submitGuess}
+            />
+          </section>
+        </section>
 
         {guesses > 0 && (
-          <GuessLayout>
-            {matches
-              .slice()
-              .reverse()
-              .map((guess, index) => {
-                const originalIndex = matches.length - 1 - index;
-                const shouldAnimate = originalIndex >= initialGuessCount;
-                return (
-                  <Guess
-                    key={guess.id}
-                    guess={guess}
-                    answer={answer}
-                    animate={shouldAnimate}
-                  />
-                );
-              })}
-          </GuessLayout>
+          <section aria-label="Previous guesses">
+            <GuessLayout>
+              {matches
+                .slice()
+                .reverse()
+                .map((guess, index) => {
+                  const originalIndex = matches.length - 1 - index;
+                  const shouldAnimate = originalIndex >= initialGuessCount;
+                  return (
+                    <Guess
+                      key={guess.id}
+                      guess={guess}
+                      answer={answer}
+                      animate={shouldAnimate}
+                    />
+                  );
+                })}
+            </GuessLayout>
+          </section>
         )}
 
         {victory && (
-          <Victory
-            answer={answer}
-            todayGame={todayGame}
-            onShowStats={() => setShowStats(true)}
-          />
+          <section aria-label="Victory message" aria-live="polite">
+            <Victory
+              answer={answer}
+              todayGame={todayGame}
+              onShowStats={() => setShowStats(true)}
+            />
+          </section>
         )}
-      </div>
+      </main>
     </>
   );
 }

@@ -11,7 +11,12 @@ export default function Settings({ show, onClose, answer }) {
   };
 
   return (
-    <div className="absolute left-1/2 top-50 z-10 w-[min(90vw,760px)] -translate-x-1/2 rounded-xl border border-slate-200 bg-white/90 px-6 py-4 text-slate-800 shadow-xl backdrop-blur-sm">
+    <section
+      role="dialog"
+      aria-modal="true"
+      aria-label="Settings"
+      className="absolute left-1/2 top-50 z-10 w-[min(90vw,760px)] -translate-x-1/2 rounded-xl border border-slate-200 bg-white/90 px-6 py-4 text-slate-800 shadow-xl backdrop-blur-sm"
+    >
       <div className="flex items-start gap-3">
         <div className="flex-1">
           <p className="text-lg font-bold  text-black">Settings</p>
@@ -47,6 +52,6 @@ export default function Settings({ show, onClose, answer }) {
           <IoMdClose size={22} />
         </button>
       </div>
-    </div>
+    </section>
   );
 }

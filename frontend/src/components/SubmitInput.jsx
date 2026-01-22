@@ -19,11 +19,11 @@ export default function SubmitInput({
   const BACKEND_URL = config.BACKEND_URL;
 
   const handleSubmitGuess = (e, selectedMatch = null) => {
+    e.preventDefault?.();
+
     if (autoCompleteMatches.length === 0 && !selectedMatch) {
       return;
     }
-
-    e.preventDefault();
 
     const finalGuess = selectedMatch?.name || autoCompleteMatches[0].name;
 
@@ -74,20 +74,20 @@ export default function SubmitInput({
   }, [debouncedValue, matches, BACKEND_URL]);
 
   return (
-    <div className="mt-45">
+    <form
+      className="mt-45"
+      onSubmit={(e) => handleSubmitGuess(e)}
+      aria-label="Submit your guess"
+    >
       <input
         type="text"
         value={guess}
+        aria-label="Guess the god"
         disabled={victory}
         onChange={(e) => {
           setGuess(e.target.value);
           setAutoCompleteMatches([]);
           setLoading(true);
-        }}
-        onKeyDown={(e) => {
-          if (e.key === "Enter") {
-            handleSubmitGuess(e);
-          }
         }}
         placeholder="Guess the god..."
         className="rounded-md border-2 p-2 w-120 bg-gray-100 focus:outline-none focus:ring-2"
@@ -125,9 +125,7 @@ export default function SubmitInput({
           </div>
         )}
       <button
-        onClick={(e) => {
-          handleSubmitGuess(e);
-        }}
+        type="submit"
         className="ml-2 rounded-md px-4 py-2 text-white font-semibold border-black shadow-lg transition-all duration-200 hover:brightness-110"
         style={{
           background: "linear-gradient(135deg, #ebbe6d 0%, #a68f4f 100%)",
@@ -136,6 +134,6 @@ export default function SubmitInput({
       >
         Submit
       </button>
-    </div>
+    </form>
   );
 }

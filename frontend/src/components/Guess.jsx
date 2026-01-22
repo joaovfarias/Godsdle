@@ -42,8 +42,11 @@ export default function Guess({ guess, answer, animate = true }) {
           hyphens: auto;
         }
       `}</style>
-      <div className="flex flex-row items-center gap-5 mb-2 justify-center">
-        <div
+      <article
+        className="flex flex-row items-center gap-5 mb-2 justify-center"
+        aria-label={`Guess row for ${guess.name}`}
+      >
+        <figure
           className={animate ? "flip-card relative group" : "relative group"}
           style={animate ? { animationDelay: "0s" } : {}}
         >
@@ -53,12 +56,12 @@ export default function Guess({ guess, answer, animate = true }) {
             title={guess.name}
             className="w-25 h-25 object-cover rounded-lg border-solid border-2 border-black inset-shadow shadow-inner shadow-black"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-70 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-200">
+          <figcaption className="absolute inset-0 bg-black bg-opacity-70 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-200">
             <p className="text-white font-semibold text-center px-2">
               {guess.name}
             </p>
-          </div>
-        </div>
+          </figcaption>
+        </figure>
         <div
           className={
             (guess.pantheon === answer.pantheon
@@ -163,7 +166,7 @@ export default function Guess({ guess, answer, animate = true }) {
         >
           <p className="text-sm">{guess.realm}</p>
         </div>
-      </div>
+      </article>
     </>
   );
 }
