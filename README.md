@@ -5,7 +5,7 @@ A Wordle-style single-page game where players guess Greek/Norse gods, demigods, 
 ---
 
 ## Live
-* Jogue agora: https://godsdle.vercel.app/
+* Play now: https://godsdle.vercel.app/
 
 
 ---
