@@ -2,7 +2,7 @@ import config from "../config/env.js";
 
 export default function Guess({ guess, answer, animate = true }) {
   const prefix =
-    "flex flex-row items-center justify-center w-25 h-25 rounded-lg text-center text-white border border-gray-700 inset-shadow shadow-inner shadow-black break-words overflow-hidden hover:brightness-125 transition-all duration-100";
+    "flex flex-row items-center justify-center w-25 h-25 rounded-lg text-center text-white border border-gray-700 inset-shadow shadow-inner shadow-black break-words overflow-hidden hover:brightness-125 transition-all duration-100 cursor-default";
   const boxColors = {
     correct: prefix + " bg-green-500 ",
     incorrect: prefix + " bg-red-500 ",
@@ -56,7 +56,7 @@ export default function Guess({ guess, answer, animate = true }) {
             title={guess.name}
             className="w-25 h-25 object-cover rounded-lg border-solid border-2 border-black inset-shadow shadow-inner shadow-black"
           />
-          <figcaption className="absolute inset-0 bg-black bg-opacity-70 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-200">
+          <figcaption className="absolute inset-0 bg-black bg-opacity-70 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-200 cursor-default">
             <p className="text-white font-semibold text-center px-2">
               {guess.name}
             </p>

@@ -11,6 +11,72 @@ body,
   font-weight: 900;
   letter-spacing: 1px;
 }
+
+/* Mobile-specific responsive fixes */
+@media (max-width: 1024px) {
+  /* Prevent horizontal scrolling */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Make the entire guess section scrollable horizontally on mobile with unified scrollbar */
+  section[aria-label="Guess results"] {
+    overflow-x: auto;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thick;
+    max-width: 100vw;
+    align-items: flex-start;
+  }
+
+  section[aria-label="Guess results"] > header[aria-label="Guess legend"] {
+    padding-left: 1.5rem;
+  }
+
+  section[aria-label="Guess results"]::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  section[aria-label="Guess results"]::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+  }
+
+  /* Ensure header and guess rows don't create their own scrollbars */
+  section[aria-label="Guess results"] header {
+    min-width: max-content;
+    padding-left: 1rem;
+    justify-content: flex-start;
+  }
+
+  article[aria-label^="Guess row"] {
+    min-width: max-content;
+    padding-left: 1rem;
+    justify-content: flex-start;
+  }
+
+  /* Logo adjustments for mobile */
+  img[alt="Godsdle logo"] {
+    max-width: 80vw;
+    height: auto;
+  }
+
+  /* Input field responsiveness */
+  input[aria-label="Guess the god"] {
+    max-width: calc(100vw - 8rem);
+  }
+
+  /* Autocomplete dropdown responsiveness */
+  input[aria-label="Guess the god"] + div {
+    max-width: calc(100vw - 8rem);
+  }
+
+  /* Adjust button spacing on mobile */
+  nav[aria-label="Primary actions"] {
+    gap: 2rem;
+  }
+}
 .tooltip {
   position: relative;
   display: inline-block;
