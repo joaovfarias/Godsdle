@@ -14,6 +14,11 @@ body,
 
 /* Mobile-specific responsive fixes */
 @media (max-width: 1024px) {
+  /* Fix background on mobile - bg-fixed doesn't work reliably */
+  main {
+    background-attachment: scroll !important;
+  }
+
   /* Prevent horizontal scrolling */
   html,
   body {
@@ -31,7 +36,7 @@ body,
   }
 
   section[aria-label="Guess results"] > header[aria-label="Guess legend"] {
-    padding-left: 1.5rem;
+    padding-left: 1rem;
   }
 
   section[aria-label="Guess results"]::-webkit-scrollbar {
@@ -47,12 +52,14 @@ body,
   section[aria-label="Guess results"] header {
     min-width: max-content;
     padding-left: 1rem;
+    margin-left: 1rem;
     justify-content: flex-start;
   }
 
   article[aria-label^="Guess row"] {
     min-width: max-content;
     padding-left: 1rem;
+    margin-left: 3.5rem;
     justify-content: flex-start;
   }
 
