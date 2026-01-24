@@ -1,5 +1,7 @@
+import math
 import os
 from datetime import date, datetime
+import random
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -42,16 +44,18 @@ app.mount("/images", StaticFiles(directory=str(IMAGES_DIR)), name="images")
 def root():
     return {"status": "funcinando"}
 
-START_DATE = get_start_date()
 
 @app.get("/today")
 def today():
     today = date.today()
-    days_since_start = (today - START_DATE).days
-
     gods = load_gods()
-    god_of_the_day = gods[days_since_start % len(gods)]
-
+    
+    start_date = get_start_date()
+    days_since_start = (today - start_date).days
+    
+    random.seed(days_since_start)
+    god_of_the_day = random.choice(gods)
+    
     return {
         "date": today.isoformat(),
         "god": {
